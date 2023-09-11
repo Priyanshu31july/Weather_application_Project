@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    
+
+
+
+
+  </head>
+  <body>
+  
+  
+
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Weather Phenomena</a>
+          <div class="dropdown-content">
+            <a href="#">Rain</a>
+            <a href="#">Snow</a>
+            <a href="#">Hail</a>
+            <a href="#">Tornado</a>
+            <a href="#">Hurricane</a>
+          </div>
+        </li>
+        <li><a href="http://127.0.0.1:5503/index.html" id="loginBtn">Login</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#">Weather</a>
+          <div class="dropdown-content">
+            <a href="#">Current Weather</a>
+            <a href="#">5-Day Forecast</a>
+            <a href="#">Weather Maps</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <button onclick="window.location.href='http://127.0.0.1:5500/signup.html';">Sign Up</button>
+
+
+    
+    
+    <!-- Header Section -->
+    <header>
+      <h1>WEATHER</h1>
+      <p>Learn about different Weather phenomena and find out weather forecast for your location.</p>
+    </header>
+  
+    <!-- Forecast Section -->
+    <section class="forecast">
+      <div id="location-form">
+        <input type="text" id="location-input" placeholder="Enter location...">
+        <button id="submit-button">Get Forecast</button>
+      </div>
+      <!-- Weather Forecast Section -->
+
+
+      <div id="forecast-container">
+        <div class="forecast-card">
+          <h3>Hazy Sun</h3>
+          
+        </div>
+        <div class="forecast-card" >
+          <h3>Cloudy</h3>
+         
+        </div>
+        <div class="forecast-card">
+          <h3>Mostly Cloudy</h3>
+         
+        </div>
+        <div class="forecast-card">
+          <h3>Sunshine And Patchy Clouds</h3>
+          
+        </div>
+        <div class="forecast-card">
+          <h3>Hazy Sun</h3>
+          
+        </div>
+      </div>
+    </section>
+  
+  </body>
+  
+	<main>
+		<section class="slider">
+			<div class="slider-container">
+				<img src="image1.jpg" alt="Weather Image">
+        <img src="image2.jpg" alt="Weather Image">
+        <img src="image3.jpg" alt="Weather Image">
+        <img src="image4.jpg" alt="Weather Image">
+        <img src="image5.jpg" alt="Weather Image">
+        <img src="image6.jpg" alt="Weather Image">
+        <img src="image7.jpg" alt="Weather Image">
+        <img src="image8.jpg" alt="Weather Image">
+        <img src="image9.jpg" alt="Weather Image">
+        <img src="image10.jpg" alt="Weather Image">
+        <img src="image11.jpg" alt="Weather Image">
+        <img src="image12.jpg" alt="Weather Image">
+        
+       
+      
+				
+			</div>
+		</section>
+		<section class="forecast">
+			
+		</section>
+		<!-- Phenomena Section -->
+    <!-- Example HTML for the tornado section -->
+
+
+<script>
+function expandSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  const extraInfo = section.querySelector('.weather-phenomena-extra-info');
+  const readMoreButton = section.querySelector('.read-more-button');
+  
+  if (extraInfo.style.display === 'none') {
+    extraInfo.style.display = 'block';
+    readMoreButton.innerHTML = 'Read Less';
+  } else {
+    extraInfo.style.display = 'none';
+    readMoreButton.innerHTML = 'Read More';
+  }
+}
+</script>
+
+<section class="phenomena">
+  <h2>Weather Phenomena</h2>
+  <div class="phenomena-container">
+    <div class="weather-phenomena-section" id="tornado-section">
+      <h2 class="weather-phenomena-title">Tornado</h2>
+      <img src="pimage1.jpg" alt="Tornado" width="250px" height="160px class="weather-phenomena-image">
+      <p class="weather-phenomena-description">A tornado is a rapidly rotating column of air that is in contact with both the surface of the Earth and a cumulonimbus cloud or, in rare cases, the base of a cumulus cloud.</p>
+      <button class="read-more-button" onclick="expandSection('tornado-section')">Read More</button>
+      <div class="weather-phenomena-extra-info" id="tornado-extra-info" style="display: none;">
+        <p class="weather-phenomena-description">Tornadoes come in many shapes and sizes, but are typically visible in the form of a condensation funnel originating from the base of a cumulonimbus cloud, with a cloud of rotating debris and dust beneath it. They are often accompanied by a loud, continuous roar or rumble, and can cause significant damage to buildings and other structures in their path.</p>
+      </div>
+    </div>
+    <div class="phenomena-section">
+      <h2>Hurricane</h2>
+      <img src="pimage2.jpg" alt="Hurricane" width="250px" height="160px">
+      <p class="content">A hurricane is a tropical storm with winds that have reached a constant speed of 74 mph or more. Hurricanes can cause catastrophic damage to coastlines and several hundred miles inland. They also produce torrential rains and storm surges that can cause flooding. The Saffir-Simpson Hurricane Wind Scale is a 1 to 5 rating based on a hurricane's sustained wind speed.</p>
+      <p class="read-more"><a href="#" onclick="toggleContent('hurricane')">Read More</a></p>
+    </div>
+    
+    <div class="phenomena-section">
+      <h2>Thunderstorm</h2>
+      <img src="pimage3.jpg" alt="Thunderstorm" width="250px" height="160px">
+      <p class="content">A thunderstorm is a storm with lightning and thunder. It is produced by a cumulonimbus cloud, usually producing gusty winds, heavy rain and sometimes hail. Thunderstorms can occur year-round and at all hours. Thunderstorms are most likely to occur in the spring and summer months and during the afternoon and evening hours.</p>
+      <p class="read-more"><a href="#" onclick="toggleContent('thunderstorm')">Read More</a></p>
+    </div>
+    
+    <div class="phenomena-section">
+      <h2>Blizzard</h2>
+      <img src="pimage4.jpg" alt="Blizzard" width="250px" height="160px">
+      <p class="content">A blizzard is a severe snowstorm with strong winds and low visibility. Blizzards can be life-threatening if people are not prepared for the extreme cold, snow, and wind. A blizzard is classified as having sustained winds or frequent gusts of 35 mph or greater, and sufficient snow in the air to reduce visibility to less than 0.25 miles.</p>
+      <p class="read-more"><a href="#" onclick="toggleContent('blizzard')">Read More</a></p>
+      
+				</div>
+				<div class="phenomena-section">
+          <img src="pimage5.jpg" alt="tsunami" width="250px" height="160px">
+					<h3>Tsunami</h3>
+					<p>A series of ocean waves with very long wavelengths (typically several hundred kilometers) caused by large-scale disturbances of the ocean, such as earthquakes, volcanic eruptions, and landslides.</p>
+          <p class="read-more"><a href="#" onclick="toggleContent('tsunami')">Read More</a></p>
+        </div>
+			
+      
+    </div>
+   
+      <div id="snow"></div>
+      <div id="rain"></div>
+      <script>
+        // create snowflake elements
+for (var i = 0; i < 50; i++) {
+    var flake = document.createElement("div");
+    flake.className = "snowflake";
+    document.getElementById("snow").appendChild(flake);
+  }
+  
+  // create raindrop elements
+  for (var i = 0; i < 50; i++) {
+    var drop = document.createElement("div");
+    drop.className = "raindrop";
+    document.getElementById("rain").appendChild(drop);
+  }
+  
+      </script>
+    
+    
+    
+    
+    <script>
+      function toggleContent(section) {
+        var content = document.querySelector('.' + section + ' .content');
+        var readMore = document.querySelector('.' + section + ' .read-more a');
+        
+        if (content.style.display === 'none') {
+          content.style.display = 'block';
+          readMore.innerHTML = 'Read Less';
+        } else {
+          content.style.display = 'none';
+          readMore.innerHTML = 'Read More';
+        }
+      }
+    
+      </script>
+<div class="current-weather">
+  <div class="temperature"></div>
+  <div class="description"></div>
+</div>
+
+
+   
+		</section>
+	</main>
+	<script src="script.js"></script>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are a weather website dedicated to providing accurate and up-to-date information on all types of weather phenomena.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Weather Phenomena</h3>
+        <ul>
+          <li><a href="#">Tornado</a></li>
+          <li><a href="#">Hurricane</a></li>
+          <li><a href="#">Thunderstorm</a></li>
+          <li><a href="#">Blizzard</a></li>
+          <li><a href="#">Drought</a></li>
+          <li><a href="#">Flood</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Phone</a></li>
+          <li><a href="#">Address</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+
+
+
+
+</html>
